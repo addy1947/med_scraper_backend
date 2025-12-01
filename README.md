@@ -101,6 +101,20 @@ Extracts medicine names from an uploaded prescription image.
 }
 ```
 
+### 4. Health Check
+**Endpoint**: `GET /health`
+
+Checks if the server is running and healthy.
+
+**Response**:
+```json
+{
+  "status": "OK",
+  "message": "Server is healthy",
+  "timestamp": "2024-05-20T10:30:00.000Z"
+}
+```
+
 ## Folder Structure
 
 -   `server.js`: Main entry point.

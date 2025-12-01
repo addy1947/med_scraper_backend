@@ -39,6 +39,14 @@ app.get('/', (req, res) => {
   res.json({ message: 'Server is running!' });
 });
 
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    message: 'Server is healthy',
+    timestamp: new Date().toISOString()
+  });
+});
+
 app.post('/api/message', async (req, res) => {
   const { message, maxProduct } = req.body;
   console.log('Received:', message, 'maxProduct:', maxProduct);
