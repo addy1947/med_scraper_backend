@@ -13,7 +13,7 @@ import { checkPharmEasyPincode } from './pincode/01_pharmeasy.js';
 import { checkTrueMedPincode } from './pincode/01_truemed.js';
 import { checkApolloServiceability } from './pincode/01_apoolo.js';
 import { check1mgServiceability } from './pincode/01_1mg.js';
-import { checkNetMedsPincode } from './pincode/01_netMed.js';
+import { checkNetMedsPincode } from './pincode/01_netmed.js';
 import multer from 'multer';
 import { extractMedicines } from './ocr/gemini.js';
 
